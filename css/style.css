@@ -174,7 +174,7 @@ svg {
   border: 2px solid var(--light);
 }
 
-/* Media Query for non-mobile users */
+/* Media Queries for non-mobile users */
 @media screen and (min-width: 740px) {
   .dropdown-linked-item {
     height: 100px;
@@ -190,5 +190,23 @@ svg {
 
   .hero {
     max-height: 480px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .dropdown-linked-item {
+    height: 100px;
+  }
+
+  .landing-dropdown {
+    height: 100px;
+  }
+
+  .hero-image {
+    max-height: 600px;
+  }
+
+  .hero {
+    max-height: 600px;
   }
 }
