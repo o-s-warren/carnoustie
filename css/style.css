@@ -192,3 +192,21 @@ svg {
     max-height: 480px;
   }
 }
+
+@media screen and (min-width: 1080px) {
+  .dropdown-linked-item {
+    height: 100px;
+  }
+
+  .landing-dropdown {
+    height: 100px;
+  }
+
+  .hero-image {
+    max-height: 600px;
+  }
+
+  .hero {
+    max-height: 600px;
+  }
+}
