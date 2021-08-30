@@ -58,7 +58,7 @@ header {
 }
 
 .hero {
-  background-image: url("/images/carnoustie-1880-sharpened.jpg");
+  background-image: url("/carnoustie/images/carnoustie-1880-sharpened.jpg");
   background-position: bottom;
   background-size: cover;
   width: 100vw;
