@@ -1,0 +1,194 @@
+/* CSS Variables */
+:root {
+  --sand: #cb9448;
+  --red: #ba545b;
+  --green: #99b75d;
+  --blue: #458d8e;
+  --dark: #21434a;
+  --light: #f5e3c6;
+  --white: #fffffe;
+  --red-active: #9C3F45;
+  --green-active: #7F9B45;
+  --blue-active: #346A6A;
+}
+
+/* Typography */
+body {
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--light);
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--light);
+  line-height: 1;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.15;
+  font-weight: 600;
+  align-self: start;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 12px 0;
+}
+
+/* Initial Layout */
+header {
+  width: 100vw;
+  background-color: var(--sand);
+  padding: 14px 12px;
+}
+
+.hero {
+  background-image: url("/images/carnoustie-1880-sharpened.jpg");
+  background-position: bottom;
+  background-size: cover;
+  width: 100vw;
+  max-height: 460px;
+  z-index: -10;
+}
+
+.hero-image {
+  width: 100vw;
+  max-height: 460px;
+  opacity: 0;
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  padding: 24px;
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dropdown */
+.landing-dropdown {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  transition: all 0.6s ease-in-out;
+}
+
+svg {
+  fill: var(--white);
+  transition: all 0.6s ease-in-out;
+}
+
+.dropdown-history {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.dropdown-nature {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.dropdown-golfing {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.dropdown-map {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.dropdown-linked-item {
+  padding: 12px;
+  display: block;
+  height: 120px;
+  border-top: 2px solid var(--light);
+}
+
+#history-section {
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  height: auto;
+  max-height: 0;
+}
+
+#nature-section {
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  height: auto;
+  max-height: 0;
+}
+
+#golfing-section {
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  height: auto;
+  max-height: 0;
+}
+
+/* Item Pages */
+.history-heading {
+  padding: 12px;
+  height: 120px;
+  background-color: var(--red-active);
+  color: var(--light);
+  border-bottom: 2px solid var(--light);
+}
+
+.history-item-content {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.item-content-image {
+  max-width: 360px;
+  align-self: center;
+  margin: 20px;
+  border: 2px solid var(--light);
+}
+
+/* Media Query for non-mobile users */
+@media screen and (min-width: 740px) {
+  .dropdown-linked-item {
+    height: 100px;
+  }
+
+  .landing-dropdown {
+    height: 100px;
+  }
+
+  .hero-image {
+    max-height: 480px;
+  }
+
+  .hero {
+    max-height: 480px;
+  }
+}
